@@ -55,10 +55,14 @@ namespace inventory.view
         {
             tab.SelectedIndex = 1;
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
             tab.SelectedIndex = 2;
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

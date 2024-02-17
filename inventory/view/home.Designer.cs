@@ -37,9 +37,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.transac = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tab.SuspendLayout();
             this.dash.SuspendLayout();
@@ -54,7 +54,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("LEMON MILK Bold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(21, 18);
+            this.label1.Location = new System.Drawing.Point(9, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 19);
             this.label1.TabIndex = 1;
@@ -65,10 +65,10 @@
             this.tab.Controls.Add(this.dash);
             this.tab.Controls.Add(this.stock);
             this.tab.Controls.Add(this.transac);
-            this.tab.Location = new System.Drawing.Point(170, -5);
+            this.tab.Location = new System.Drawing.Point(142, -5);
             this.tab.Name = "tab";
             this.tab.SelectedIndex = 0;
-            this.tab.Size = new System.Drawing.Size(871, 658);
+            this.tab.Size = new System.Drawing.Size(899, 658);
             this.tab.TabIndex = 0;
             // 
             // dash
@@ -78,7 +78,7 @@
             this.dash.Location = new System.Drawing.Point(4, 22);
             this.dash.Name = "dash";
             this.dash.Padding = new System.Windows.Forms.Padding(3);
-            this.dash.Size = new System.Drawing.Size(863, 632);
+            this.dash.Size = new System.Drawing.Size(891, 632);
             this.dash.TabIndex = 0;
             this.dash.Text = "DASHBOARD";
             // 
@@ -99,7 +99,7 @@
             this.stock.Location = new System.Drawing.Point(4, 22);
             this.stock.Name = "stock";
             this.stock.Padding = new System.Windows.Forms.Padding(3);
-            this.stock.Size = new System.Drawing.Size(863, 632);
+            this.stock.Size = new System.Drawing.Size(891, 632);
             this.stock.TabIndex = 1;
             this.stock.Text = "STOCKS";
             // 
@@ -120,7 +120,7 @@
             this.transac.Location = new System.Drawing.Point(4, 22);
             this.transac.Name = "transac";
             this.transac.Padding = new System.Windows.Forms.Padding(3);
-            this.transac.Size = new System.Drawing.Size(863, 632);
+            this.transac.Size = new System.Drawing.Size(891, 632);
             this.transac.TabIndex = 2;
             this.transac.Text = "TRANSACTIONS";
             // 
@@ -134,47 +134,59 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "TRANSACTIONS";
             // 
-            // button1
+            // button3
             // 
-            this.button1.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(25, 77);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 36);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "DASHBOARD";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.button3.BackgroundImage = global::inventory.Properties.Resources.transac64;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(34, 209);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(73, 71);
+            this.button3.TabIndex = 5;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.BackgroundImage = global::inventory.Properties.Resources.stock64;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(25, 137);
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.button2.Location = new System.Drawing.Point(34, 132);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(124, 36);
+            this.button2.Size = new System.Drawing.Size(73, 71);
             this.button2.TabIndex = 4;
-            this.button2.Text = "STOCKS";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
-            // button3
+            // button1
             // 
-            this.button3.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(25, 195);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(124, 36);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "TRANSACTIONS";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = global::inventory.Properties.Resources.dash64;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Montserrat", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.Location = new System.Drawing.Point(34, 54);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(73, 72);
+            this.button1.TabIndex = 3;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::inventory.Properties.Resources._32x32;
-            this.pictureBox1.Location = new System.Drawing.Point(105, 6);
+            this.pictureBox1.Location = new System.Drawing.Point(93, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(44, 40);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
